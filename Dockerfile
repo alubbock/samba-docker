@@ -9,5 +9,5 @@ RUN apk add --update \
 VOLUME ["/etc", "/var/cache/samba", "/var/lib/samba", "/var/log/samba",\
         "/run/samba"]
 
-ENTRYPOINT ["smbd", "--foreground", "--log-stdout", "--no-process-group"]
+ENTRYPOINT ["smbd", "--foreground", "--debug-stdout", "--no-process-group"]
 CMD []
